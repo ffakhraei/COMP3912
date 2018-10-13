@@ -22,11 +22,42 @@ class DetailViewController: UIViewController {
         }
     }
     
+    
+    //setting up data
+    var dog = [
+        "name":"Dog",
+        "image":"dog"]
 
+    var cat = [
+        "name":"Cat",
+        "image":"cat"]
+    
+    var chicken = [
+        "name":"Chicken",
+        "image":"chicken"]
+    
+    var horse = [
+        "name":"Horse",
+        "image":"horse"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        var words : [[String : String]] = [dog, cat, horse, chicken]
+        
+        let word = UserDefaults.standard.object(forKey: "word")
+        print(word!)
+        
+        for i in (0...words.count - 1) {
+            if (words[i]["name"]! == word as! String) {
+                print("Found!")
+                //update the image
+                imgPlaceholder.image = UIImage(imageLiteralResourceName: words[i]["image"]!)
+                lblPlaceHolder.text = words[i]["name"]
+            }
+        }
     }
     
 

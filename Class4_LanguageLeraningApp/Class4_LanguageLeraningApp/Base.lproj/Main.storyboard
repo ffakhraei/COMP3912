@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Class4_LanguageLeraningApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFC-VN-2wC">
+                                <rect key="frame" x="135" y="345" width="105" height="30"/>
+                                <state key="normal" title="Show"/>
+                                <connections>
+                                    <action selector="btnShowWord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TI8-EY-DbT"/>
+                                    <segue destination="PKW-OF-1UX" kind="show" id="YsS-B2-eo2"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LR2-7p-GBp">
+                                <rect key="frame" x="16" y="91" width="343" height="216"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LR2-7p-GBp" secondAttribute="trailing" constant="16" id="OPo-FK-80g"/>
+                            <constraint firstItem="BFC-VN-2wC" firstAttribute="top" secondItem="LR2-7p-GBp" secondAttribute="bottom" constant="38" id="TyQ-PD-Eiw"/>
+                            <constraint firstItem="LR2-7p-GBp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ZHc-Xq-Daf"/>
+                            <constraint firstItem="BFC-VN-2wC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="135" id="uAo-QQ-ngs"/>
+                            <constraint firstItem="LR2-7p-GBp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="71" id="yyB-5h-lRp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BFC-VN-2wC" secondAttribute="trailing" constant="135" id="zYh-MZ-I85"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PSm-5O-7TN"/>
+                    <connections>
+                        <outlet property="wordListPV" destination="LR2-7p-GBp" id="1az-D7-xl2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3066.4000000000001" y="69.715142428785612"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="lgb-HW-wWR">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="PKW-OF-1UX" customClass="DetailViewController" customModule="Class4_LanguageLeraningApp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dGX-Y4-s64">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="center" fixedFrame="YES" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="XdD-sC-8Zt">
+                                <rect key="frame" x="-13" y="108" width="400" height="452.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog" translatesAutoresizingMaskIntoConstraints="NO" id="uGB-GB-2nH">
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="imgHolder">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="YTg-K6-EuF" appends="YES" id="Vbp-O5-m3L"/>
+                                        </connections>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dog" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kib-5m-giz">
+                                        <rect key="frame" x="184" y="432" width="32" height="20.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="lblHolder">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="98Y-P8-fQA"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qc6-Ns-RtF"/>
+                    <connections>
+                        <outlet property="imgPlaceholder" destination="uGB-GB-2nH" id="tfc-4w-2UQ"/>
+                        <outlet property="lblPlaceHolder" destination="Kib-5m-giz" id="wcf-gw-ZGm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oqd-Db-ojp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="YTg-K6-EuF">
+                    <connections>
+                        <action selector="imgTapped:" destination="PKW-OF-1UX" id="Cov-Hx-GRX"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="3874.4000000000001" y="69.715142428785612"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dog" width="400" height="400"/>
+    </resources>
+</document>

@@ -38,17 +38,34 @@ class CompanyTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return companies.count
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        getData()
+        tableView.reloadData()
+    }
+    
+    func getData() {
+        do {
+            companies = try context.fetch(Company.fetchRequest())
+        }
+        catch {
+            print("Failed to fetch data")
+        }
+    }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "theCell", for: indexPath)
 
         // Configure the cell...
+        let company = companies[indexPath.row]
+        
+        if let temp = company.name {
+            cell.textLabel?.text = temp
+        }
 
         return cell
     }
-    */
-
+ 
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

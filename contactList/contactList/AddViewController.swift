@@ -10,6 +10,28 @@ import UIKit
 
 class AddViewController: UIViewController {
 
+    @IBOutlet weak var txtName: UITextField!
+    
+    @IBOutlet weak var txtPhone: UITextField!
+    
+    @IBOutlet weak var txtWebsite: UITextField!
+    
+    @IBAction func btnAdd(_ sender: UIButton) {
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        
+        let company = Company(context: context)
+        company.name = txtName.text
+        company.phone = txtPhone.text
+        company.website = txtWebsite.text
+        
+        //Save data to core data
+        (UIApplication.shared.delegate as! AppDelegate).saveContext()
+        
+        let _ = navigationController?.popViewController(animated: true)
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

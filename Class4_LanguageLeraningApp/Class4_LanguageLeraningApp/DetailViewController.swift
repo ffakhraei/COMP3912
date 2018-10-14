@@ -13,15 +13,48 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var imgPlaceholder: UIImageView!
     @IBOutlet weak var lblPlaceHolder: UILabel!
     
-    @IBAction func imgTapped(_ sender: UITapGestureRecognizer) {
+    @IBAction func tapped(_ sender: Any) {
         print("Tapped image")
         if lblPlaceHolder.isHidden {
             lblPlaceHolder.isHidden = false
         } else {
-            lblPlaceHolder.isHidden = false
+            lblPlaceHolder.isHidden = true
         }
     }
     
+    @IBAction func swipedLeft(_ sender: UISwipeGestureRecognizer) {
+        print("Swiped left")
+        var words : [[String : String]] = [dog, cat, horse, chicken]
+        let word = UserDefaults.standard.object(forKey: "word")
+        print(word!)
+        for i in (0...words.count - 1) {
+            if (words[i]["name"]! == word as! String) {
+                print("Found!")
+                //update the image
+                imgPlaceholder.image = UIImage(imageLiteralResourceName: words[((i-1)+words.count)%words.count]["image"]!)
+                lblPlaceHolder.text = words[((i-1)+words.count)%words.count]["name"]
+                UserDefaults.standard.set(words[((i-1)+words.count)%words.count]["name"], forKey: "word")
+            }
+        }
+    }
+    
+    @IBAction func swiped(_ sender: UISwipeGestureRecognizer) {
+        print("Swiped right")
+        var words : [[String : String]] = [dog, cat, horse, chicken]
+        
+        let word = UserDefaults.standard.object(forKey: "word")
+        print(word!)
+        for i in (0...words.count - 1) {
+            if (words[i]["name"]! == word as! String) {
+                print("Found!")
+                //update the image
+                imgPlaceholder.image = UIImage(imageLiteralResourceName: words[(i+1)%words.count]["image"]!)
+                lblPlaceHolder.text = words[(i+1)%words.count]["name"]
+                UserDefaults.standard.set(words[(i+1)%words.count]["name"], forKey: "word")
+            }
+        }
+        
+    }
     
     //setting up data
     var dog = [
@@ -44,12 +77,11 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
         var words : [[String : String]] = [dog, cat, horse, chicken]
         
         let word = UserDefaults.standard.object(forKey: "word")
-        print(word!)
         
+        print(word!)
         for i in (0...words.count - 1) {
             if (words[i]["name"]! == word as! String) {
                 print("Found!")
@@ -58,6 +90,9 @@ class DetailViewController: UIViewController {
                 lblPlaceHolder.text = words[i]["name"]
             }
         }
+        
+        
+        
     }
     
 

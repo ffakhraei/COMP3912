@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SbU-6h-SgK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFC-VN-2wC">
-                                <rect key="frame" x="135" y="345" width="105" height="30"/>
+                                <rect key="frame" x="135" y="389" width="105" height="30"/>
                                 <state key="normal" title="Show"/>
                                 <connections>
                                     <action selector="btnShowWord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TI8-EY-DbT"/>
@@ -26,7 +26,7 @@
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LR2-7p-GBp">
-                                <rect key="frame" x="16" y="91" width="343" height="216"/>
+                                <rect key="frame" x="16" y="135" width="343" height="216"/>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -47,7 +47,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3066.4000000000001" y="69.715142428785612"/>
+            <point key="canvasLocation" x="4005.5999999999999" y="69.715142428785612"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="lgb-HW-wWR">
@@ -61,14 +61,16 @@
                                 <rect key="frame" x="-13" y="108" width="400" height="452.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog" translatesAutoresizingMaskIntoConstraints="NO" id="uGB-GB-2nH">
+                                    <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog" translatesAutoresizingMaskIntoConstraints="NO" id="uGB-GB-2nH">
                                         <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
                                         <accessibility key="accessibilityConfiguration" identifier="imgHolder">
                                             <bool key="isElement" value="YES"/>
                                         </accessibility>
                                         <gestureRecognizers/>
                                         <connections>
-                                            <outletCollection property="gestureRecognizers" destination="YTg-K6-EuF" appends="YES" id="Vbp-O5-m3L"/>
+                                            <outletCollection property="gestureRecognizers" destination="fkv-St-xZL" appends="YES" id="gm8-ei-Q3J"/>
+                                            <outletCollection property="gestureRecognizers" destination="LsY-Vd-L76" appends="YES" id="JNh-XT-sny"/>
+                                            <outletCollection property="gestureRecognizers" destination="xHG-FM-Mgh" appends="YES" id="KFA-fr-eXB"/>
                                         </connections>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dog" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kib-5m-giz">
@@ -93,13 +95,41 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oqd-Db-ojp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="YTg-K6-EuF">
+                <tapGestureRecognizer id="fkv-St-xZL">
                     <connections>
-                        <action selector="imgTapped:" destination="PKW-OF-1UX" id="Cov-Hx-GRX"/>
+                        <action selector="tapped:" destination="PKW-OF-1UX" id="QLu-EN-scd"/>
                     </connections>
                 </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="LsY-Vd-L76">
+                    <connections>
+                        <action selector="swiped:" destination="PKW-OF-1UX" id="sAk-0G-1L6"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="xHG-FM-Mgh">
+                    <connections>
+                        <action selector="swipedLeft:" destination="PKW-OF-1UX" id="MIX-St-k8M"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3874.4000000000001" y="69.715142428785612"/>
+            <point key="canvasLocation" x="4808.8000000000002" y="69.715142428785612"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="e6D-eA-5cF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SbU-6h-SgK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3Pi-r3-g6N">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="DlZ-XP-L3W"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rft-A2-TYh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3066.4000000000001" y="69.715142428785612"/>
         </scene>
     </scenes>
     <resources>

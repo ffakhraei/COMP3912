@@ -25,6 +25,19 @@ class DetailViewController: UIViewController {
         lblWebsite.text = showCompany?.website
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "sguEdit" {
+            let vc = segue.destination as! UpdateViewController
+            vc.updateComapny = showCompany
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        lblName.text = showCompany?.name
+        lblPhone.text = showCompany?.phone
+        lblWebsite.text = showCompany?.website
+    }
+    
 
     /*
     // MARK: - Navigation

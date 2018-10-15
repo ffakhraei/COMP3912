@@ -9,11 +9,31 @@
 import UIKit
 
 class UpdateViewController: UIViewController {
+    
+    var updateComapny: Company?
 
+    @IBOutlet weak var txtName: UITextField!
+    @IBOutlet weak var txtPhone: UITextField!
+    @IBOutlet weak var txtWebsite: UITextField!
+    @IBAction func btnSave(_ sender: UIButton) {
+        updateComapny?.name = txtName.text
+        updateComapny?.phone = txtName.text
+        updateComapny?.website = txtWebsite.text
+        
+        (UIApplication.shared.delegate as! AppDelegate).saveContext()
+        
+        let _ = navigationController?.popViewController(animated: true)
+        
+        print("contact updated")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        txtName.text = updateComapny?.name
+        txtPhone.text = updateComapny?.phone
+        txtWebsite.text = updateComapny?.website
     }
     
 

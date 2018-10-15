@@ -15,7 +15,6 @@ class CompanyTableViewController: UITableViewController {
     
     //Create an empty array to hold tasks
     var companies: [Company] = []
-        
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,9 +53,8 @@ class CompanyTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "theCell", for: indexPath)
-
         // Configure the cell...
+        let cell = tableView.dequeueReusableCell(withIdentifier: "theCell", for: indexPath)
         let company = companies[indexPath.row]
         
         if let temp = company.name {
@@ -66,6 +64,14 @@ class CompanyTableViewController: UITableViewController {
         return cell
     }
  
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("Preparing for segue")
+        if segue.identifier == "sguDetail" {
+            let vc = segue.destination as! DetailViewController
+            vc.showCompany = companies[(tableView.indexPathForSelectedRow?.row)!]
+        }
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

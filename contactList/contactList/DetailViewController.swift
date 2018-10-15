@@ -9,11 +9,20 @@
 import UIKit
 
 class DetailViewController: UIViewController {
+    
+    var showCompany: Company?
 
+    @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var lblPhone: UILabel!
+    @IBOutlet weak var lblWebsite: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        lblName.text = showCompany?.name
+        lblPhone.text = showCompany?.phone
+        lblWebsite.text = showCompany?.website
     }
     
 

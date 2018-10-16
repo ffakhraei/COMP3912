@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import CoreData
 
-class CompanyTableViewController: UITableViewController {
+class CompanyTableViewController: UITableViewController, UISearchBarDelegate {
     
     //Get a ref to Core Data
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
@@ -71,7 +72,32 @@ class CompanyTableViewController: UITableViewController {
             vc.showCompany = companies[(tableView.indexPathForSelectedRow?.row)!]
         }
     }
+        
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print("search string changed")
+        searchBar.setShowsCancelButton(true, animated: true)
+        if !searchText.isEmpty {
+            let fetchRequest: NSFetchRequest<Company> = Company.fetchRequest()
+            fetchRequest.predicate = NSPredicate(format: "name CONTAINS[c] %@", searchText)
+            do {
+                companies = try context.fetch(fetchRequest)
+                print("companies found: \(companies.count)")
+                tableView.reloadData()
+            } catch {
+                print("failed to fetch data")
+            }
+        }
+    }
     
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.text = nil
+        searchBar.showsCancelButton = false
+        searchBar.resignFirstResponder()
+        getData()
+        tableView.reloadData()
+ }
+ 
+ 
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -80,17 +106,28 @@ class CompanyTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
+            let company = companies[indexPath.row]
+            context.delete(company)
+            (UIApplication.shared.delegate as! AppDelegate).saveContext()
+            
+            do {
+                companies = try context.fetch(Company.fetchRequest())
+            } catch {
+                print ("failed to fetch data")
+            }
+            
             tableView.deleteRows(at: [indexPath], with: .fade)
+            
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
+    
 
     /*
     // Override to support rearranging the table view.

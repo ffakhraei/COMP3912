@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D208993721813A8100A57541 /* ReticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D208993621813A8100A57541 /* ReticleView.swift */; };
+		D2937474218015AA00297D13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2937473218015AA00297D13 /* AppDelegate.swift */; };
+		D2937476218015AA00297D13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2937475218015AA00297D13 /* ViewController.swift */; };
+		D2937479218015AA00297D13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2937477218015AA00297D13 /* Main.storyboard */; };
+		D293747C218015AA00297D13 /* BallistiCalc.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D293747A218015AA00297D13 /* BallistiCalc.xcdatamodeld */; };
+		D293747E218015AB00297D13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D293747D218015AB00297D13 /* Assets.xcassets */; };
+		D2937481218015AB00297D13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D293747F218015AB00297D13 /* LaunchScreen.storyboard */; };
+		D293748C218015AB00297D13 /* BallistiCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D293748B218015AB00297D13 /* BallistiCalcTests.swift */; };
+		D2937497218015AB00297D13 /* BallistiCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2937496218015AB00297D13 /* BallistiCalcUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2937488218015AB00297D13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2937468218015AA00297D13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D293746F218015AA00297D13;
+			remoteInfo = BallistiCalc;
+		};
+		D2937493218015AB00297D13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2937468218015AA00297D13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D293746F218015AA00297D13;
+			remoteInfo = BallistiCalc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D208993621813A8100A57541 /* ReticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReticleView.swift; sourceTree = "<group>"; };
+		D2937470218015AA00297D13 /* BallistiCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BallistiCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2937473218015AA00297D13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D2937475218015AA00297D13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D2937478218015AA00297D13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D293747B218015AA00297D13 /* BallistiCalc.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BallistiCalc.xcdatamodel; sourceTree = "<group>"; };
+		D293747D218015AB00297D13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2937480218015AB00297D13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D2937482218015AB00297D13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2937487218015AB00297D13 /* BallistiCalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BallistiCalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D293748B218015AB00297D13 /* BallistiCalcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallistiCalcTests.swift; sourceTree = "<group>"; };
+		D293748D218015AB00297D13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2937492218015AB00297D13 /* BallistiCalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BallistiCalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2937496218015AB00297D13 /* BallistiCalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallistiCalcUITests.swift; sourceTree = "<group>"; };
+		D2937498218015AB00297D13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D293746D218015AA00297D13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2937484218015AB00297D13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D293748F218015AB00297D13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D2937467218015AA00297D13 = {
+			isa = PBXGroup;
+			children = (
+				D2937472218015AA00297D13 /* BallistiCalc */,
+				D293748A218015AB00297D13 /* BallistiCalcTests */,
+				D2937495218015AB00297D13 /* BallistiCalcUITests */,
+				D2937471218015AA00297D13 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D2937471218015AA00297D13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2937470218015AA00297D13 /* BallistiCalc.app */,
+				D2937487218015AB00297D13 /* BallistiCalcTests.xctest */,
+				D2937492218015AB00297D13 /* BallistiCalcUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2937472218015AA00297D13 /* BallistiCalc */ = {
+			isa = PBXGroup;
+			children = (
+				D2937473218015AA00297D13 /* AppDelegate.swift */,
+				D2937475218015AA00297D13 /* ViewController.swift */,
+				D2937477218015AA00297D13 /* Main.storyboard */,
+				D208993621813A8100A57541 /* ReticleView.swift */,
+				D293747D218015AB00297D13 /* Assets.xcassets */,
+				D293747F218015AB00297D13 /* LaunchScreen.storyboard */,
+				D2937482218015AB00297D13 /* Info.plist */,
+				D293747A218015AA00297D13 /* BallistiCalc.xcdatamodeld */,
+			);
+			path = BallistiCalc;
+			sourceTree = "<group>";
+		};
+		D293748A218015AB00297D13 /* BallistiCalcTests */ = {
+			isa = PBXGroup;
+			children = (
+				D293748B218015AB00297D13 /* BallistiCalcTests.swift */,
+				D293748D218015AB00297D13 /* Info.plist */,
+			);
+			path = BallistiCalcTests;
+			sourceTree = "<group>";
+		};
+		D2937495218015AB00297D13 /* BallistiCalcUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D2937496218015AB00297D13 /* BallistiCalcUITests.swift */,
+				D2937498218015AB00297D13 /* Info.plist */,
+			);
+			path = BallistiCalcUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D293746F218015AA00297D13 /* BallistiCalc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D293749B218015AB00297D13 /* Build configuration list for PBXNativeTarget "BallistiCalc" */;
+			buildPhases = (
+				D293746C218015AA00297D13 /* Sources */,
+				D293746D218015AA00297D13 /* Frameworks */,
+				D293746E218015AA00297D13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BallistiCalc;
+			productName = BallistiCalc;
+			productReference = D2937470218015AA00297D13 /* BallistiCalc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2937486218015AB00297D13 /* BallistiCalcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D293749E218015AB00297D13 /* Build configuration list for PBXNativeTarget "BallistiCalcTests" */;
+			buildPhases = (
+				D2937483218015AB00297D13 /* Sources */,
+				D2937484218015AB00297D13 /* Frameworks */,
+				D2937485218015AB00297D13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2937489218015AB00297D13 /* PBXTargetDependency */,
+			);
+			name = BallistiCalcTests;
+			productName = BallistiCalcTests;
+			productReference = D2937487218015AB00297D13 /* BallistiCalcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D2937491218015AB00297D13 /* BallistiCalcUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D29374A1218015AB00297D13 /* Build configuration list for PBXNativeTarget "BallistiCalcUITests" */;
+			buildPhases = (
+				D293748E218015AB00297D13 /* Sources */,
+				D293748F218015AB00297D13 /* Frameworks */,
+				D2937490218015AB00297D13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2937494218015AB00297D13 /* PBXTargetDependency */,
+			);
+			name = BallistiCalcUITests;
+			productName = BallistiCalcUITests;
+			productReference = D2937492218015AB00297D13 /* BallistiCalcUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2937468218015AA00297D13 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Farzin Fakhraei";
+				TargetAttributes = {
+					D293746F218015AA00297D13 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					D2937486218015AB00297D13 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = D293746F218015AA00297D13;
+					};
+					D2937491218015AB00297D13 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = D293746F218015AA00297D13;
+					};
+				};
+			};
+			buildConfigurationList = D293746B218015AA00297D13 /* Build configuration list for PBXProject "BallistiCalc" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2937467218015AA00297D13;
+			productRefGroup = D2937471218015AA00297D13 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D293746F218015AA00297D13 /* BallistiCalc */,
+				D2937486218015AB00297D13 /* BallistiCalcTests */,
+				D2937491218015AB00297D13 /* BallistiCalcUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D293746E218015AA00297D13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2937481218015AB00297D13 /* LaunchScreen.storyboard in Resources */,
+				D293747E218015AB00297D13 /* Assets.xcassets in Resources */,
+				D2937479218015AA00297D13 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2937485218015AB00297D13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2937490218015AB00297D13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D293746C218015AA00297D13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2937476218015AA00297D13 /* ViewController.swift in Sources */,
+				D293747C218015AA00297D13 /* BallistiCalc.xcdatamodeld in Sources */,
+				D2937474218015AA00297D13 /* AppDelegate.swift in Sources */,
+				D208993721813A8100A57541 /* ReticleView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2937483218015AB00297D13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D293748C218015AB00297D13 /* BallistiCalcTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D293748E218015AB00297D13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2937497218015AB00297D13 /* BallistiCalcUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2937489218015AB00297D13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D293746F218015AA00297D13 /* BallistiCalc */;
+			targetProxy = D2937488218015AB00297D13 /* PBXContainerItemProxy */;
+		};
+		D2937494218015AB00297D13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D293746F218015AA00297D13 /* BallistiCalc */;
+			targetProxy = D2937493218015AB00297D13 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D2937477218015AA00297D13 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2937478218015AA00297D13 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D293747F218015AB00297D13 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2937480218015AB00297D13 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2937499218015AB00297D13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D293749A218015AB00297D13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D293749C218015AB00297D13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 23GV7USFRA;
+				INFOPLIST_FILE = BallistiCalc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.farzinfakhraei.BallistiCalc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D293749D218015AB00297D13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 23GV7USFRA;
+				INFOPLIST_FILE = BallistiCalc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.farzinfakhraei.BallistiCalc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D293749F218015AB00297D13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 23GV7USFRA;
+				INFOPLIST_FILE = BallistiCalcTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.farzinfakhraei.BallistiCalcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BallistiCalc.app/BallistiCalc";
+			};
+			name = Debug;
+		};
+		D29374A0218015AB00297D13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 23GV7USFRA;
+				INFOPLIST_FILE = BallistiCalcTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.farzinfakhraei.BallistiCalcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BallistiCalc.app/BallistiCalc";
+			};
+			name = Release;
+		};
+		D29374A2218015AB00297D13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 23GV7USFRA;
+				INFOPLIST_FILE = BallistiCalcUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.farzinfakhraei.BallistiCalcUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BallistiCalc;
+			};
+			name = Debug;
+		};
+		D29374A3218015AB00297D13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 23GV7USFRA;
+				INFOPLIST_FILE = BallistiCalcUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.farzinfakhraei.BallistiCalcUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BallistiCalc;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D293746B218015AA00297D13 /* Build configuration list for PBXProject "BallistiCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2937499218015AB00297D13 /* Debug */,
+				D293749A218015AB00297D13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D293749B218015AB00297D13 /* Build configuration list for PBXNativeTarget "BallistiCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D293749C218015AB00297D13 /* Debug */,
+				D293749D218015AB00297D13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D293749E218015AB00297D13 /* Build configuration list for PBXNativeTarget "BallistiCalcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D293749F218015AB00297D13 /* Debug */,
+				D29374A0218015AB00297D13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D29374A1218015AB00297D13 /* Build configuration list for PBXNativeTarget "BallistiCalcUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D29374A2218015AB00297D13 /* Debug */,
+				D29374A3218015AB00297D13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D293747A218015AA00297D13 /* BallistiCalc.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D293747B218015AA00297D13 /* BallistiCalc.xcdatamodel */,
+			);
+			currentVersion = D293747B218015AA00297D13 /* BallistiCalc.xcdatamodel */;
+			path = BallistiCalc.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D2937468218015AA00297D13 /* Project object */;
+}

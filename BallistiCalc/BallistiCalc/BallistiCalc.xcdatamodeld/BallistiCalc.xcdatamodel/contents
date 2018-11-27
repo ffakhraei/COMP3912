@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14315.18" systemVersion="18A391" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18A391" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Firearm" representedClassName="Firearm" syncable="YES" codeGenerationType="class">
         <attribute name="barrelLenght" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="calibre" optional="YES" attributeType="String" syncable="YES"/>
@@ -7,15 +7,6 @@
         <attribute name="model" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="sightHeight" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="twistRate" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-    </entity>
-    <entity name="MeasurementUnit" representedClassName="MeasurementUnit" syncable="YES" codeGenerationType="class">
-        <attribute name="fps" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="inch" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="kmph" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="m" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="mileph" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="mps" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <relationship name="inchToMeters" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Round" syncable="YES"/>
     </entity>
     <entity name="Round" representedClassName="Round" syncable="YES" codeGenerationType="class">
         <attribute name="bulletDiameter" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
@@ -36,8 +27,7 @@
         <attribute name="v500" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Round" positionX="-63" positionY="-18" width="128" height="285"/>
-        <element name="MeasurementUnit" positionX="165.078125" positionY="-15.9453125" width="128" height="148"/>
         <element name="Firearm" positionX="138.16796875" positionY="147.75" width="128" height="135"/>
+        <element name="Round" positionX="-63" positionY="-18" width="128" height="285"/>
     </elements>
 </model>

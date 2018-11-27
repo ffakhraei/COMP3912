@@ -78,10 +78,8 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if pickerView == pvCalibre {
             UserDefaults.standard.set(pvCalibreData[row], forKey: "calibre")
-            txtCalibre.text = pvCalibreData[row]
         } else {
             UserDefaults.standard.set(pvGrainData[row], forKey: "grain")
-            txtCalibre.text = pvGrainData[row]
         }
 
     }
